@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Main | Turn Your Life Around</title>
+  <title>Main Article | Turn Your Life Around</title>
   <style>
     body {
       margin: 0;
@@ -13,64 +13,87 @@
     }
     header {
       background: linear-gradient(to right, #ffecd2, #fcb69f);
-      padding: 60px 20px;
+      padding: 50px 20px;
       text-align: center;
     }
     header h1 {
-      font-size: 52px;
-      margin-bottom: 10px;
+      font-size: 50px;
       color: #ff00cc;
     }
     header p {
       font-size: 22px;
-      max-width: 700px;
-      margin: 0 auto;
+      max-width: 800px;
+      margin: auto;
     }
     section {
-      padding: 50px 20px;
-      max-width: 1000px;
+      padding: 40px 20px;
+      max-width: 900px;
       margin: auto;
     }
     section h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
+      font-size: 32px;
       color: #3333ff;
+      margin-bottom: 15px;
     }
     section p {
       font-size: 18px;
-      line-height: 1.6;
-      margin-bottom: 30px;
+      line-height: 1.7;
+      margin-bottom: 25px;
     }
-    .video-container, .testimonial-container, .pricing-container {
+    .media-container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       gap: 20px;
+      justify-content: center;
+      margin: 20px 0;
     }
-    iframe, img {
+    img, iframe {
       width: 300px;
       border-radius: 10px;
     }
-    .plan {
-      background: #f0f0f0;
-      padding: 20px;
-      border-radius: 10px;
-      width: 250px;
-      text-align: center;
-    }
     footer {
-      text-align: center;
-      padding: 30px;
       background: #3333ff;
       color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
     }
-    footer button {
-      padding: 12px 30px;
-      background: #ff00cc;
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      color: white;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      z-index: 9999;
+      flex-direction: column;
+      padding: 20px;
+    }
+    .popup-overlay h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .popup-overlay p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .popup-overlay code {
+      background: #444;
+      padding: 10px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    .popup-overlay button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #ff00cc;
       color: white;
       border: none;
       border-radius: 5px;
-      font-size: 16px;
+      font-size: 18px;
       cursor: pointer;
     }
   </style>
@@ -78,61 +101,56 @@
 <body>
 
 <header>
-  <h1>Welcome to Your Transformation</h1>
-  <p>Discover how thousands have unlocked the secrets to wealth, fitness, and happiness using our revolutionary program.</p>
+  <h1>Turn Your Life Around in Just 30 Days!</h1>
+  <p>You’re about to unlock the secrets billionaires, fitness gurus, and social media stars don’t want you to know. Or are you?</p>
 </header>
 
 <section>
-  <h2>About Our Method</h2>
-  <p>Our system is built on cutting-edge AI research, insider knowledge from elite circles, and the psychology of success. We don’t just give you tips — we reshape your mindset, routine, and outcomes.</p>
-  <img src="https://via.placeholder.com/800x400?text=Success+Blueprint" alt="Success Blueprint" style="width: 100%; max-width: 800px;">
-</section>
-
-<section>
-  <h2>Success Stories</h2>
-  <div class="testimonial-container">
-    <img src="https://via.placeholder.com/300x200?text=Zoe,+19" alt="Zoe">
-    <img src="https://via.placeholder.com/300x200?text=Raj,+27" alt="Raj">
-    <img src="https://via.placeholder.com/300x200?text=Kevin,+33" alt="Kevin">
+  <h2>1. Why You’re Still Failing (But We Won’t Say It)</h2>
+  <p>Let’s face it: you’ve read all the books, watched the TikToks, and saved the Instagram posts. Yet, here you are — still broke, still tired, still invisible online. Why? Because they never give you the full story. But stay with us — we *almost* will.</p>
+  <div class="media-container">
+    <img src="https://via.placeholder.com/300x200?text=Dream+Body" alt="Dream Body">
+    <img src="https://via.placeholder.com/300x200?text=Luxury+Lifestyle" alt="Luxury Lifestyle">
   </div>
-  <p><strong>Zoe, 19:</strong> “I lost 20 pounds and gained 200 followers in one month — without even trying!”</p>
-  <p><strong>Raj, 27:</strong> “It completely changed my perspective on success. I feel unstoppable!”</p>
-  <p><strong>Kevin, 33:</strong> “I didn’t just change my body; I changed my life.”</p>
 </section>
 
 <section>
-  <h2>Watch and Learn</h2>
-  <div class="video-container">
+  <h2>2. The Secret to Effortless Success (Sort of)</h2>
+  <p>Studies show 95% of people fail because they don’t understand the simple principle we’re about to almost explain. Is it mindset? Habits? Pure luck? We’ll hint at it without ever quite revealing it. Keep scrolling — you’re getting warmer.</p>
+  <div class="media-container">
     <iframe src="https://www.youtube.com/embed/qlrH5AY8B1A" allowfullscreen></iframe>
     <iframe src="https://www.youtube.com/embed/F6FR08GO7YY" allowfullscreen></iframe>
   </div>
 </section>
 
 <section>
-  <h2>Pricing Plans</h2>
-  <div class="pricing-container">
-    <div class="plan">
-      <h3>Bronze Plan</h3>
-      <p>$5/month</p>
-      <p>Basic tips and motivation.</p>
-    </div>
-    <div class="plan">
-      <h3>Gold Plan</h3>
-      <p>$25/month</p>
-      <p>Advanced strategies + personal insights.</p>
-    </div>
-    <div class="plan">
-      <h3>Elite Plan</h3>
-      <p>$99/month</p>
-      <p>1-on-1 coaching + VIP resources.</p>
-    </div>
+  <h2>3. Transform Your Body, Mind, Bank Account</h2>
+  <p>Imagine waking up tomorrow with six-pack abs, a thriving side hustle, and thousands of adoring fans. Now imagine we actually told you how to do that. But remember — nothing real comes free. Stick around, because you’re *this* close to changing everything.</p>
+  <div class="media-container">
+    <img src="https://via.placeholder.com/300x200?text=Before+and+After" alt="Before and After">
+    <img src="https://via.placeholder.com/300x200?text=Mindset+Shift" alt="Mindset Shift">
   </div>
 </section>
 
 <footer>
-  <p>Ready to take the next step?</p>
-  <button onclick="alert('This is a parody!')">Subscribe Now</button>
+  &copy; 2025 Turn Your Life Around. All rights reserved.
 </footer>
+
+<div class="popup-overlay" id="popup">
+  <h2>Subscribe to Unlock the Final Secret</h2>
+  <p>You’ve come this far. Don’t quit now. To access the full transformation blueprint, send payment to:</p>
+  <code>Bank Name: WorldMoney Bank<br>Account No: 1234-5678-9012<br>IBAN: XX00YYYY123456789012</code>
+  <p>Once paid, email your receipt to scam@turnyourlifearound.com.</p>
+  <button onclick="alert('Thank you! We will definitely not email you back.')">I Paid!</button>
+</div>
+
+<script>
+  window.onscroll = function() {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 100) {
+      document.getElementById('popup').style.display = 'flex';
+    }
+  };
+</script>
 
 </body>
 </html>
