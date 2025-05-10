@@ -3,58 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome | Turn Your Life Around</title>
+  <title>Turn Your Life Around</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #ffecd2, #fcb69f);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      background: linear-gradient(to right, #f6f9fc, #e9f5ff);
       color: #333;
     }
-    h1 {
-      font-size: 48px;
+    header {
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 52px;
       color: #ff00cc;
       margin-bottom: 10px;
     }
-    p {
-      font-size: 20px;
+    header p {
+      font-size: 22px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .main-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .content {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
+    .content h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #3333ff;
+    }
+    .content p {
+      font-size: 18px;
+      line-height: 1.6;
       margin-bottom: 20px;
     }
-    img {
-      width: 80%;
-      max-width: 500px;
+    .video-container {
+      margin: 20px 0;
+      display: flex;
+      gap: 20px;
+    }
+    iframe {
+      width: 300px;
+      height: 200px;
       border-radius: 10px;
+    }
+    .signup-box {
+      flex: 1;
+      min-width: 300px;
+      background: #f0f0f0;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    .signup-box h3 {
+      font-size: 24px;
       margin-bottom: 20px;
+      color: #ff00cc;
     }
-    input {
+    .signup-box input {
+      width: 100%;
       padding: 10px;
-      width: 250px;
-      margin-right: 10px;
-      border-radius: 5px;
+      margin: 10px 0;
       border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
     }
-    button {
-      padding: 10px 20px;
+    .signup-box button {
+      width: 100%;
+      padding: 12px;
       background-color: #ff00cc;
       color: white;
       border: none;
       border-radius: 5px;
+      font-size: 18px;
       cursor: pointer;
+    }
+    footer {
+      background: #3333ff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+
+<header>
   <h1>Turn Your Life Around</h1>
-  <p>Enter your email to unlock the secrets to wealth, health, and happiness!</p>
-  <img src="https://via.placeholder.com/600x400?text=Fit+Rich+Happy+Couple" alt="Happy Couple">
-  <div>
-    <input type="email" placeholder="Enter your email">
-    <button onclick="window.location.href='main.html'">Join Now</button>
+  <p>Unlock wealth, health, fame — and the life you *deserve*. Our AI-powered system reveals the secrets they don’t want you to know… sort of.</p>
+</header>
+
+<div class="main-section">
+  <div class="content">
+    <h2>Why You Can’t Miss This</h2>
+    <p>Want to lose 20 pounds without dieting? Want to triple your income in 30 days? Want followers to adore your every move? We’ve studied the science, the influencers, the millionaires — and built a system that promises change without explaining how. Sounds familiar?</p>
+    <p>Get ready for vague tips, flashy AI videos, and recycled wellness buzzwords — all wrapped in a sleek package to make you *feel* like you’re improving. We don’t just sell a product. We sell the **desire** for change.</p>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/qlrH5AY8B1A" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/F6FR08GO7YY" allowfullscreen></iframe>
+    </div>
   </div>
+
+  <div class="signup-box">
+    <h3>Join the Revolution</h3>
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email Address">
+    <input type="text" placeholder="Monthly Income">
+    <input type="text" placeholder="Current Weight">
+    <input type="text" placeholder="Instagram Followers">
+    <button onclick="window.location.href='main.html'">I’m Ready</button>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Turn Your Life Around. All rights reserved.
+</footer>
+
 </body>
 </html>
